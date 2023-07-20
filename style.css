@@ -23,14 +23,12 @@ body {
 }
 
 .form {
-  /* margin-top: auto; */
   border-radius: 16px;
   background-color: #fbfafb;
   width: 588px;
   height: 618px;
-  /* margin-left: 441px; */
-  /* margin-top: 208px; */
 
+  position: relative;
   display: flex;
   border: 1px solid #cdc6db;
   align-items: center;
@@ -54,9 +52,28 @@ body {
   width: 300px;
   height: 48px;
 }
+.button-submit {
+  border: 1px groove #e7e7e7;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 5px;
+
+  font-size: 16px;
+  font-family: "Outfit";
+  font-weight: 500;
+  width: 300px;
+  height: 48px;
+}
 
 .input {
   height: 44px;
+  width: 285px;
+  padding-left: 10px;
 }
 
 .label {
@@ -86,18 +103,32 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
 }
+.sub-title-link {
+  width: 291px;
+  height: 17px;
+  color: #808080;
+  margin: 10px 0px 20px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  margin-left: 50px;
+}
 
 .logo {
   width: 110px;
   height: 91px;
   position: absolute;
-  top: 90px;
+  top: -45px;
 }
 
 .btn_logo {
   width: 18px;
   height: 18px;
   margin-right: 50px;
+}
+.btn_google {
+  width: 18px;
+  height: 18px;
+  margin-right: 55px;
 }
 
 .divider_container {
@@ -115,7 +146,7 @@ body {
 }
 
 .divider {
-  border-top: 1px solid black;
+  border-top: 1px solid #808080;
   border-radius: 5px;
   width: 126px;
   opacity: 50%;
@@ -130,6 +161,13 @@ body {
   font-size: 12px;
   text-align: center;
 }
+.eye-img {
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  bottom: 30%;
+  right: 27%;
+}
 
 /* Media Queries */
 
@@ -139,21 +177,22 @@ body {
     height: auto;
     padding: 20px;
   }
-
-  .button,
-  .input {
-    width: 100%;
-  }
-
   .label {
-    margin-left: 10px;
+    margin-left: 30px;
   }
 
   .logo {
     width: 80px;
     height: 70px;
     position: absolute;
-    top: 135px;
+    top: -45px;
+  }
+  .eye-img {
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    bottom: 27%;
+    right: 15%;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -165,6 +204,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .label {
+    margin-left: 10px;
   }
   .form {
     border-radius: 16px;
@@ -183,6 +225,13 @@ body {
     width: 80px;
     height: 70px;
     position: absolute;
-    top: 135px;
+    top: -45px;
+  }
+  .eye-img {
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    bottom: 28%;
+    right: 9%;
   }
 }
