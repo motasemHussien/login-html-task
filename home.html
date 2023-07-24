@@ -2,42 +2,97 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: { max: "400px" },
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <div class="container">
-      <div class="form-container">
-        <iv class="form">
-          <img class="logo" src="logo.svg" />
-          <p class="title">Create account</p>
-          <p class="sub-title">Start your 30 day free trial. Cancel any time</p>
-          <button class="button">
+  <body class="block h-screen m-0">
+    <div
+      class="flex flex-col w-full h-full bg-[#f5f4f7] justify-center items-center sm:flex flex-col w-full bg-[#f5f4f7] justify-center items-center"
+    >
+      <div class="flex justify-center items-center">
+        <div
+          class="flex flex-col w-[588px] h-[618px] bg-[#fbfafb] rounded-lg border border-[#cdc6db] items-center justify-center sm: w-[290px] h-[524px]"
+        >
+          <img
+            class="w-[110px] h-[91px] absolute top-[45px] sm:w-[80px] h-[70px] absolute top-[45px]"
+            src="logo.svg"
+          />
+          <p
+            class="w-[167px] h-[30px] mt-[10px] text-[24px] font-Outfit font-semibold"
+          >
+            Create account
+          </p>
+          <p
+            class="w-[291px] h-[17px] text-gray-500 my-[15px] font-inter text-[14px]"
+          >
+            Start your 30 day free trial. Cancel any time
+          </p>
+          <button
+            class="border border-[#e7e7e7] groove flex flex-row items-center rounded-[8px] m-[5px] bg-fbfafb text-[16px] font-Outfit font-medium w-[300px] h-[48px]"
+          >
             <img
-              class="btn_logo"
+              class="w-[18px] h-[18px] ml-[15px] mr-[55px]"
               src="google.svg"
-              
             />Sign up with Google
           </button>
-          <button class="button">
-            <img class="btn_logo" src="facebook.svg" />Sign up with Facebook
-          </button>
-          <div class="divider_container">
-            <hr class="divider" />
-            <p class="divider_text">OR</p>
-            <hr class="divider" />
-          </div>
-          <label class="label">Email</label>
-          <input class="input" type="email" />
-          <label class="label">Password</label>
-          <input class="input" type="password" />
-          <img class="eye-img" src="eye.svg"/>
           <button
-            class="button-submit"
-           
+            class="border border-[#e7e7e7] groove flex flex-row items-center rounded-[8px] m-[5px] bg-fbfafb text-[16px] font-Outfit font-medium w-[300px] h-[48px]"
+          >
+            <img
+              class="w-[18px] h-[18px] ml-[15px] mr-[50px]"
+              src="facebook.svg"
+            />Sign up with Facebook
+          </button>
+          <div class="flex flex-row justify-center items-center">
+            <hr
+              class="border-t border-gray-500 rounded-[5px] w-[126px] opacity-50"
+            />
+            <p class="opacity-50 font-inter text-[14px] m-[10px]">OR</p>
+            <hr
+              class="border-t border-gray-500 rounded-[5px] w-[126px] opacity-50"
+            />
+          </div>
+          <label
+            class="w-[35px] h-[18px] text-[14px] font-Outfit font-medium self-start mx-[10px] ml-[155px] sm: ml-[10px]"
+            >Email</label
+          >
+          <input
+            class="border border-[#e7e7e7] groove flex flex-row items-center rounded-[8px] m-[5px] bg-[#fbfafb] text-[16px] font-Outfit font-medium h-[44px] w-[285px] px-[10px]"
+            type="email"
+          />
+          <label
+            class="w-[35px] h-[18px] text-[14px] font-Outfit font-medium self-start mx-[10px] ml-[155px]"
+            >Password</label
+          >
+          <input
+            class="border border-[#e7e7e7] groove flex flex-row items-center rounded-[8px] m-[5px] bg-[#fbfafb] text-[16px] font-Outfit font-medium h-[44px] w-[285px] px-[10px]"
+            type="password"
+          />
+          <img
+            class="w-[21px] h-[20px] absolute relative bottom-[35px] right-[-115px] sm:bottom-[28px] right-[9px]"
+            src="eye.svg"
+          />
+          <button
+            class="border border-[#e7e7e7] groove flex flex-row bg-black text-white justify-center items-center rounded-[8px] m-[5px] text-[16px] font-Outfit font-medium w-[300px] h-[48px]"
           >
             Create Account
           </button>
-          <p class="sub-title-link" >
+          <p
+            class="w-[291px] h-[17px] text-gray-500 mt-[10px] ml-[50px] font-inter text-[14px]"
+          >
             Already have an account?
             <a
               style="
@@ -49,9 +104,12 @@
             >
           </p>
         </div>
-        <p class="footer-title">© 2023 All rights reserved.</p>
       </div>
-     
+      <p
+        class="w-[291px] h-[17px] mt-[10px] text-gray-500 font-inter text-[12px] text-center"
+      >
+        © 2023 All rights reserved.
+      </p>
     </div>
   </body>
 </html>
